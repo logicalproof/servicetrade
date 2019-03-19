@@ -1,5 +1,5 @@
 
-module ServiceTrade
+module Servicetrade
 
   class Authenticator
     attr_writer :user, :password
@@ -14,9 +14,12 @@ module ServiceTrade
                         { username: @user,
                           password: @password }
       rescue
-        print "Error Not Authorized"  
+        Servicetrade.set_auth_token = "Error:Invalid/Missing Credentials"
+        puts "Error:Invalid/Missing Credentials"
       end
-      ServiceTrade.set_auth_token = JSON.parse(response.body)["data"]["authToken"]
+      unless response.nil?
+        Servicetrade.set_auth_token = JSON.parse(response.body)["data"]["authToken"]
+      end
     end
   end
 

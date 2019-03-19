@@ -1,13 +1,13 @@
 
-module ServiceTrade
+module Servicetrade
   
-  class Tags
-    def get_tags    
+  class TagInterface
+    def get_all   
       begin
         response = RestClient.get 'https://api.servicetrade.com/api/tag', 
                         {  
                           cookies: {
-                            PHPSESSID: ServiceTrade.auth_token}, 
+                            PHPSESSID: Servicetrade.auth_token}, 
                             params: {
                                   counts: true
                               #currently there is no way to query officeIds, this list must be hardcoded.
@@ -25,7 +25,7 @@ module ServiceTrade
             response = RestClient.get 'https://api.servicetrade.com/api/tag', 
                             {  
                               cookies: {
-                                PHPSESSID: ServiceTrade.auth_token}, 
+                                PHPSESSID: Servicetrade.auth_token}, 
                                 params: {
                                   counts: true,
                                   page: n

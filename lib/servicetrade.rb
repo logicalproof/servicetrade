@@ -11,11 +11,16 @@ module Servicetrade
     @@auth_token
   end
 
+  def self.base_url
+    'https://api.servicetrade.com/api'
+  end
+
   require 'time'
   require 'restclient'
   require 'json'
 
-  require 'servicetrade/tags'
+  require 'servicetrade/tag_interface'
+  require 'servicetrade/job_interface'
   require 'servicetrade/authenticator'
   require 'servicetrade/response_processor'
 end

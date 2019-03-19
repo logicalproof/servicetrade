@@ -1,5 +1,5 @@
 # This class is designed to take a servicetrade parsed response and create an output file as a csv. THIS DATA SHOULD BE GENERAL OUTPUTS; IT IS UP TO THE END USER TO MODIFY THE REPONSE BEFORE PROCESSING
-module ServiceTrade
+module Servicetrade
   
   class ResponseProcessor
     

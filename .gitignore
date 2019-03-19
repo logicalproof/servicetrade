@@ -7,6 +7,7 @@
 /pkg/
 /spec/reports/
 /tmp/
+/servicetrade-0.0.1.gem
 
 # rspec failure tracking
 .rspec_status
