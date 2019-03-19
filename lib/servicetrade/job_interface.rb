@@ -7,11 +7,11 @@ module Servicetrade
       url = Servicetrade.base_url
       case verb
       when "POST"
-        return url = "https://api.servicetrade.com/api/tag" + "/job/"
+        url = "https://api.servicetrade.com/api/tag" + "/job/"
       when "GET"
-        return url = "https://api.servicetrade.com/api/tag" + "/job"
+        url = "https://api.servicetrade.com/api/tag" + "/job"
       when "PUT"
-        return url = "https://api.servicetrade.com/api/tag" + "/job"
+        url = "https://api.servicetrade.com/api/tag" + "/job"
       when "DELETE"
         raise "Not Allowed"
       else
