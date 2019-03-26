@@ -19,8 +19,6 @@ module Servicetrade
   require 'restclient'
   require 'json'
 
-  require 'servicetrade/tag_interface'
-  require 'servicetrade/job_interface'
   require 'servicetrade/resource_interface'
   require 'servicetrade/authenticator'
   require 'servicetrade/response_processor'

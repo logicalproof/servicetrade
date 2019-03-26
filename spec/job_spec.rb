@@ -10,11 +10,11 @@ RSpec.describe Servicetrade::Job do
     it "should return a resource url with an id" do
       expect(resource.url).to eq("/job/123")
     end
-    it "should return a list of allowed verbs with a resource id" do
-      expect(resource.allowed_verbs).to eq(["GET", "POST", "PUT"])
+    it "should return a list of allowed verbs for a resource id" do
+      expect(resource.allowed_verbs).to eq(["GET", "PUT"])
     end
   end
-
+ 
   context "when a job is created without an id" do
     resource = Servicetrade::Job.new()
     it "should allow respond with a blank id" do

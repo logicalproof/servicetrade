@@ -18,7 +18,7 @@ module Servicetrade
       if id == ""
         return ["GET", "POST"]
       else
-       return ["GET", "POST", "PUT"]
+       return ["GET", "PUT"]
       end
     end
 
