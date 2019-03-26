@@ -11,7 +11,7 @@ module Servicetrade
     @@auth_token
   end
 
-  def self.base_url
+  def self.endpoint_host
     'https://api.servicetrade.com/api'
   end
 
@@ -21,6 +21,9 @@ module Servicetrade
 
   require 'servicetrade/tag_interface'
   require 'servicetrade/job_interface'
+  require 'servicetrade/resource_interface'
   require 'servicetrade/authenticator'
   require 'servicetrade/response_processor'
+  require 'servicetrade/resources/job'
+  require 'servicetrade/resources/tag'
 end
