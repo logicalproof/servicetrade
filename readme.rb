@@ -9,6 +9,8 @@ resource_interface = Servicetrade::ResourceInterface.new(resource)
 # get all jobs
 resource_interface.get_all
 
+resource = Servicetrade::Tag.new(225396)
+resource_interface = Servicetrade::ResourceInterface.new(resource)
 
 200 request successful, response body contains results
 204 request successful, empty response body

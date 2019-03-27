@@ -24,4 +24,5 @@ module Servicetrade
   require 'servicetrade/response_processor'
   require 'servicetrade/resources/job'
   require 'servicetrade/resources/tag'
+  require 'servicetrade/resources/deficiency'
 end

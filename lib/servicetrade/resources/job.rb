@@ -11,7 +11,7 @@ module Servicetrade
 
     def id=(id)
       @id = id
-      @url = @url + "/#{id.to_s}"
+      @url = "/job" + "/#{id.to_s}"
     end
 
     def allowed_verbs
