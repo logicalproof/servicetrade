@@ -11,7 +11,7 @@ module Servicetrade
 
     def id=(id)
       @id = id
-      @url = "/job" + "/#{id.to_s}"
+      @url = "/job" + add_id(@id)
     end
 
     def allowed_verbs
@@ -91,10 +91,11 @@ module Servicetrade
     private
 
       def add_id(id)
+        # candidate for a resource parent class
         if id == ""
           return ""
         else
-          return "/#{id}"
+          return "/#{id.to_s}"
         end
       end
 

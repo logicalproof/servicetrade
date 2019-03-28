@@ -10,7 +10,6 @@ module Servicetrade
 
     def get_all(params={})
       set_url
-      puts @url
       response = get(params)
       
       parsed_response = parse_response(response)
@@ -22,11 +21,26 @@ module Servicetrade
       resources
     end
 
+    def post_no_entity(params={})
+      set_url
+      validate_post_params(params)
+      response = post(params)
+      parsed_response = parse_response(response)
+    end
+
+    def put(params={})
+      set_url
+      validate_post_params(params)
+      response = raw_put(params)
+      parsed_response = parse_response(response)
+    end
 
     private
 
     def parse_response(response)
       parsed_response = JSON.parse(response.body)["data"]
+      parsed_response["response_code"] = response.code
+      return parsed_response
     end
 
     def paginated?(response)
@@ -67,6 +81,50 @@ module Servicetrade
         response = error
       end
       return response
+    end
+
+    def post(params={})
+      begin
+        response = RestClient.post @url,
+                        params.to_json,
+                        {:cookies => {PHPSESSID: Servicetrade.auth_token}} 
+
+      rescue => error
+        response = error
+      end
+      return response
+
+    end
+
+    def raw_put(params={})
+      begin
+        response = RestClient.put @url,
+                        params.to_json,
+                        {:cookies => {PHPSESSID: Servicetrade.auth_token}} 
+
+      rescue => error
+        response = error
+      end
+      return response
+
+    end
+
+    def validate_post_params(params={})
+      required_keys = get_required_post_params
+      unless required_keys.all? { |e| params.include?(e) }
+        raise "Missing Required Params: #{required_keys}"
+      end
+    end
+
+    def get_required_post_params
+      required_keys = []
+      post_params = @resource.class.list_post_params
+      post_params.each_key do |key|
+        if post_params[key.to_sym][:optional] == false
+          required_keys << key
+        end
+      end
+      required_keys
     end
 
 
