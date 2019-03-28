@@ -12,25 +12,9 @@ resource_interface.get_all
 resource = Servicetrade::Tag.new(225396)
 resource_interface = Servicetrade::ResourceInterface.new(resource)
 
-200 request successful, response body contains results
-204 request successful, empty response body
-400 missing, incomplete or invalid parameters
-401 unauthorized request
-403 not allowed to perform action
-404 requested URI not found
-405 method not implemented
-500 unknown application error
 
-
-200 request successful, response body contains results
-204 request successful, empty response body
-400 missing, incomplete or invalid parameters
-401 unauthorized request
-403 not allowed to perform action
-404 requested URI not found
-405 method not implemented
-500 unknown application error
-
+%w(
+Resources to implement
 Activity
 Appointment
 Asset
@@ -44,7 +28,7 @@ Company
 Contact
 Contract
 Contract Rule
-Deficiency
+Deficiency - in progress
 EULA
 ExternalId
 ExternalSync
@@ -53,12 +37,12 @@ History
 Import
 Invoice
 Invoice Item
-Job
+Job - complete
 Job Context
 JobItem
 LegacyLookup
 LibItem
-Location
+Location - complete
 MasterAgreement
 Message
 Quote
@@ -73,13 +57,13 @@ Service Line
 ServiceRecurrence
 ServiceRequest
 ServiceTemplate
-Tag
+Tag - complete
 Tax Rate
 Terms
 Token
 User
 User Value
 Warehouse
-Webhook
+Webhook)
 
 
