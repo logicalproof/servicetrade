@@ -118,7 +118,7 @@ module Servicetrade
 
     def get_required_post_params
       required_keys = []
-      post_params = @resource.class.list_post_params
+      post_params = @resource.post_params
       post_params.each_key do |key|
         if post_params[key.to_sym][:optional] == false
           required_keys << key

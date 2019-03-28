@@ -1,34 +1,20 @@
 module Servicetrade
-  
   class Job
-    attr_accessor :id, :url, :name
+    attr_reader :allowed_verbs, :url, :name
     
-    def initialize(id="")
-      @id = id
-      @url = "/job" + add_id(@id)
+    def initialize
+      @url = "/job"
       @name = "jobs"
+      @allowed_verbs = ["GET", "POST", "PUT"]
     end
 
-    def id=(id)
-      @id = id
-      @url = "/job" + add_id(@id)
-    end
-
-    def allowed_verbs
-      if id == ""
-        return ["GET", "POST"]
-      else
-       return ["GET", "PUT"]
-      end
-    end
-
-    def self.list_post_params
+    def list_post_params
       post_params = self.list_put_params
       post_params[:autoAssignContract] = {type:"boolean", optional: true, allowed_values:[], message: "(optional, POST only) if job default contract can be uniquely determined, set it to that value"}
       return post_params
     end
 
-    def self.list_put_params
+    def list_put_params
       return {locationId: {type:"integer", optional: false, allowed_values:[], message: "location the job is to be performed at"},
               vendorId: {type:"integer", optional: false, allowed_values:[], message: "id of vendor company assigned to this job"},
               customerId: {type:"integer", optional: true, allowed_values:[], message: "(optional) id of customer company assigned to this job (if not given, location company is used)"},
@@ -46,7 +32,7 @@ module Servicetrade
               }
     end
 
-    def self.list_get_params
+    def list_get_params
       return {  id: {type: "integer", optional: true, allowed_values: [],message: "id for a single job"},
                 jobIds: {type: "string", optional: true, allowed_values: [], message: "comma-separated list of job ids"},
                 lat: {type: "double", optional: true, allowed_values: [], message: "latitude of current location; must also supply lon"},
@@ -87,17 +73,6 @@ module Servicetrade
                 updatedAfter: {type: "integer", optional: true, allowed_values: [], message: "timestamp, matches records updated on or after"}
               }
     end
-
-    private
-
-      def add_id(id)
-        # candidate for a resource parent class
-        if id == ""
-          return ""
-        else
-          return "/#{id.to_s}"
-        end
-      end
 
   end
 

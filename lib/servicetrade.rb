@@ -22,6 +22,7 @@ module Servicetrade
   require 'servicetrade/resource_interface'
   require 'servicetrade/authenticator'
   require 'servicetrade/response_processor'
+  require 'servicetrade/resource'
   require 'servicetrade/resources/job'
   require 'servicetrade/resources/tag'
   require 'servicetrade/resources/deficiency'

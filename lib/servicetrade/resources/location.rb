@@ -18,12 +18,12 @@ module Servicetrade
       return ["GET", "POST", "PUT", "DELETE"]
     end
 
-    def self.list_post_params
+    def list_post_params
       post_params = self.list_put_params
       return post_params
     end
 
-    def self.list_put_params
+    def list_put_params
       #TODO change tests to match location params
       return {entityId: {type:"integer", optional: true, allowed_values:[], message: "the id of the entity to apply the tag to (if set, you must also provide entityType and either id or name)"},
               entityType: {type:"integer", optional: true, allowed_values:[], message: "the type of the entity to apply the tag to (if set, you must also provide entityId and either id or name) See list of entity types"},
@@ -33,7 +33,7 @@ module Servicetrade
     end
     
 
-    def self.list_get_params
+    def list_get_params
       #TODO change tests to match location params
       return {  entityId: {type:"integer", optional: true, allowed_values:[], message: "tags attached to this entity id only (if set, must also provide entityType)"},
               entityType: {type:"integer", optional: true, allowed_values:[], message: "tags attached to this entity type only (if set, must also provide entityId) See list of entity types"},

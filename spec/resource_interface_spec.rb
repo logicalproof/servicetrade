@@ -9,7 +9,7 @@ RSpec.describe Servicetrade::ResourceInterface do
   end
 
   context 'when a resource_interface is initialized with a job' do
-    resource = Servicetrade::Job.new
+    resource = Servicetrade::Resource.new(Servicetrade::Job.new)
     resource_interface = Servicetrade::ResourceInterface.new(resource)
     it "should allow a job resource class" do 
       expect(resource_interface.url).to eq("https://api.servicetrade.com/api/job")
@@ -30,7 +30,7 @@ RSpec.describe Servicetrade::ResourceInterface do
   context 'when a resource_interface is initialized with a tag' do
     RestClient.log = 'stdout'
     context "for get requests" do
-      resource = Servicetrade::Tag.new
+      resource = Servicetrade::Resource.new(Servicetrade::Tag.new)
       resource_interface = Servicetrade::ResourceInterface.new(resource)
       it "should allow a tag resource class" do 
         expect(resource_interface.url).to eq("https://api.servicetrade.com/api/tag")
@@ -48,7 +48,7 @@ RSpec.describe Servicetrade::ResourceInterface do
       end
     end
     context "for post requests" do
-      resource = Servicetrade::Tag.new
+      resource = Servicetrade::Resource.new(Servicetrade::Tag.new)
       resource_interface = Servicetrade::ResourceInterface.new(resource)
       it "should allow post with no entity params" do
         new_tag = resource_interface.post_no_entity({name: "MyTestTagNSSnoEnt"})
@@ -62,7 +62,7 @@ RSpec.describe Servicetrade::ResourceInterface do
     end
 
     context "for put requests" do
-      resource = Servicetrade::Location.new
+      resource = Servicetrade::Resource.new(Servicetrade::Location.new)
       resource_interface = Servicetrade::ResourceInterface.new(resource)
       resource.id = 2138230
       it "should allow put with no entity params" do
