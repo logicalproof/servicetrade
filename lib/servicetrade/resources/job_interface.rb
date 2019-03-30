@@ -1,20 +1,25 @@
 module Servicetrade
-  class Job
-    attr_reader :allowed_verbs, :url, :name
+  class JobInterface < Servicetrade::ResourceInterface
     
-    def initialize
-      @url = "/job"
-      @name = "jobs"
-      @allowed_verbs = ["GET", "POST", "PUT"]
+    def allowed_verbs
+      return ["GET", "POST", "PUT"]
+    end
+    
+    def base_url
+      return "/job"
     end
 
-    def list_post_params
-      post_params = self.list_put_params
-      post_params[:autoAssignContract] = {type:"boolean", optional: true, allowed_values:[], message: "(optional, POST only) if job default contract can be uniquely determined, set it to that value"}
-      return post_params
+    def name
+      return "jobs"
     end
 
-    def list_put_params
+    def post_params
+      post_parameters = self.put_params
+      post_parameters[:autoAssignContract] = {type:"boolean", optional: true, allowed_values:[], message: "(optional, POST only) if job default contract can be uniquely determined, set it to that value"}
+      return post_parameters
+    end
+
+    def put_params
       return {locationId: {type:"integer", optional: false, allowed_values:[], message: "location the job is to be performed at"},
               vendorId: {type:"integer", optional: false, allowed_values:[], message: "id of vendor company assigned to this job"},
               customerId: {type:"integer", optional: true, allowed_values:[], message: "(optional) id of customer company assigned to this job (if not given, location company is used)"},
@@ -32,7 +37,7 @@ module Servicetrade
               }
     end
 
-    def list_get_params
+    def get_params
       return {  id: {type: "integer", optional: true, allowed_values: [],message: "id for a single job"},
                 jobIds: {type: "string", optional: true, allowed_values: [], message: "comma-separated list of job ids"},
                 lat: {type: "double", optional: true, allowed_values: [], message: "latitude of current location; must also supply lon"},

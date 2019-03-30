@@ -3,16 +3,17 @@ password = ENV["SERVICETRADE_PASSWORD"] #set a valid password in .env
 sa = Servicetrade::Authenticator.new username, password
 sa.get_auth_token
 
-resource = Servicetrade::Job.new
-resource_interface = Servicetrade::ResourceInterface.new(resource)
+resource = Servicetrade::TagInterface.new
+resource_interface = Servicetrade::ApiInterface.new(resource)
+resource.id = 225396
 
-# get all jobs
-resource_interface.get_all
+# get one tag
+resource_interface.get
 
-resource = Servicetrade::Tag.new(225396)
-resource_interface = Servicetrade::ResourceInterface.new(resource)
-
-
+resource = Servicetrade::Tag.new
+resource_interface = Servicetrade::ApiInterface.new(resource)
+# get all tags
+resource_interface.get
 %w(
 Resources to implement
 Activity
