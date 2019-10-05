@@ -17,7 +17,7 @@ RSpec.describe Servicetrade::ApiInterface do
     it "should allow a get request that retrieves multiple resources" do
       all_jobs = resource_interface.get
       expect(all_jobs).to be_instance_of(Array)
-      expect(all_jobs.count).to be > 1
+      expect(all_jobs.count).to be > 100
     end
     it "should allow a get request that retrieves a specific resource" do
       resource.id = "8498661"
@@ -41,10 +41,10 @@ RSpec.describe Servicetrade::ApiInterface do
         expect(all_tags.count).to be > 1
       end
       it "should allow a get request that retrieves a specific resource" do
-        resource.id = "225396"
+        resource.id = "166721"
         one_tag = resource_interface.get
         expect(one_tag).to be_instance_of(Hash)
-        expect(one_tag["id"]).to eq(225396)
+        expect(one_tag["id"]).to eq(166721)
       end
     end
     context "for post requests" do

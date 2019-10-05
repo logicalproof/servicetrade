@@ -54,12 +54,15 @@ module Servicetrade
 
     def get_paginated_resource(response, params)
       resources = []
-      if response["totalPages"] > 1
-        2.upto(response["totalPages"]) do |n|
+      if response["totalPages"].to_i > 1
+        puts "#{response["totalPages"]}"
+        2.upto(response["totalPages"].to_i) do |n|
+          puts "getting page #{n}"
           params[:page] = n
-          paginated_response = get(params)
+          paginated_response = raw_get(params)
           resources += JSON.parse(paginated_response.body)["data"][@name]
         end
+        puts "all pages retreived!"
       end 
       return resources
     end

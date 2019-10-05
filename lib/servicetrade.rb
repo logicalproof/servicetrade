@@ -27,6 +27,7 @@ module Servicetrade
   require 'servicetrade/resources/job_interface'
   require 'servicetrade/resources/deficiency_interface'
   require 'servicetrade/resources/location_interface'
+  require 'servicetrade/resources/clock_event_interface'
 
 
 end
