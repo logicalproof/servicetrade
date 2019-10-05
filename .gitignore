@@ -8,6 +8,6 @@
 /spec/reports/
 /tmp/
 /servicetrade-0.0.1.gem
-
+/servicetrade-*
 # rspec failure tracking
 .rspec_status
