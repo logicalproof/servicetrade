@@ -87,10 +87,12 @@ module Servicetrade
     end
 
     def raw_post(params={})
+      RestClient.log = 'stdout'
       begin
         response = RestClient.post @url,
                         params.to_json,
                         {:cookies => {PHPSESSID: @authenticator.auth_token}} 
+
       rescue => error
         response = error
       end
