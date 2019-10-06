@@ -20,7 +20,7 @@ module Servicetrade
   require 'servicetrade/resources/location_interface'
   require 'servicetrade/resources/clock_event_interface'
 
-  require 'servicetrade/actions/clockin'
+  require 'servicetrade/actions/clock_in'
 
 
 end
