@@ -26,6 +26,9 @@ module Servicetrade
       end
 
       def post_params
+        return {  lat: {type: "float", optional: true, allowed_values: [], message: "GPS latitude"},
+                  lon: {type: "float", optional: true, allowed_values: [], message: "GPS longitude"}
+                }
       end
     end
   end
