@@ -4,9 +4,13 @@ module Servicetrade
 
       def initialize(job_id, event_id=nil)
         @job_id = job_id
-        @event_id = "/" + event_id
+        if event_id
+          @event_id = "/" + event_id 
+        else
+          @event_id = ""
+        end
       end
-      
+
       def allowed_verbs
         return ["POST"]
       end
