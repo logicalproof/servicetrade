@@ -5,7 +5,7 @@ class CreateClockEvent
     api = Servicetrade::ApiInterface.new(action, authenticator)
     api.post
 
-    # TODO - Currently if an appointment for today already exists the technician will be added with 'no appointment', the only other option is to check for an appointment with todays date and assign them to that appointment. This could get funky if any company starts getting picky with services attached to appointments
+    # TODO - Currently if an appointment for today already exists the technician will be added with 'no appointment', the only other option is to check for an appointment with todays date and assign them to that appointment. This could get funky if any company starts getting picky with services attached to appointments. Of course there is probably an appointment for that technician already if a company is being that pedantic about it.
   end
 
   def self.clock_out(job_id, authenticator)
