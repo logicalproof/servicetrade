@@ -91,12 +91,11 @@ module Servicetrade
       begin
         if file.nil?
           response = RestClient.post @url,
-                        params.to_json,
+          params,
                         {:cookies => {PHPSESSID: @authenticator.auth_token}}
         else
           response = RestClient.post @url,
-                        myfile: file,
-                        params.to_json,
+                        params,
                         {:cookies => {PHPSESSID: @authenticator.auth_token}}
         end
 
