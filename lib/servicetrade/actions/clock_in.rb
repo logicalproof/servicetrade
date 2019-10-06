@@ -24,6 +24,9 @@ module Servicetrade
       def name
         return "events"
       end
+
+      def post_params
+      end
     end
   end
 end
