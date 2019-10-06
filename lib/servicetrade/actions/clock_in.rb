@@ -9,7 +9,7 @@ module Servicetrade
         else
           @event_id = ""
         end
-        @url = base base_url
+        @url = base_url
       end
 
       def allowed_verbs
