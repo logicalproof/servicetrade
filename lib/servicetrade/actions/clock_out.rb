@@ -14,7 +14,7 @@ module Servicetrade
       end
 
       def allowed_verbs
-        return ["Put"]
+        return ["POST"]
       end
       
       def base_url
@@ -25,9 +25,10 @@ module Servicetrade
         return "events"
       end
 
-      def put_params
+      def post_params
         return {  lat: {type: "float", optional: true, allowed_values: [], message: "GPS latitude"},
-                  lon: {type: "float", optional: true, allowed_values: [], message: "GPS longitude"}
+                  lon: {type: "float", optional: true, allowed_values: [], message: "GPS longitude"},
+                  appointmentId: {type: "integer", optional: true, allowed_values: ["open"], message: "appointment for this job into which this user is clocking out"}
                 }
       end
     end
