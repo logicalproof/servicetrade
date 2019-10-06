@@ -1,8 +1,6 @@
 # Servicetrade
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/servicetrade`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem will allow you to interact with the ServiceTrade API. 
 
 ## Installation
 
@@ -21,8 +19,45 @@ Or install it yourself as:
     $ gem install servicetrade
 
 ## Usage
+### Authentication
+To start you must authenticate with the ServiceTrade API: 
+```ruby
+@authenticator = Servicetrade::Authenticator.new username, password
+```
+Once you have authenticated all API requests will require you to pass the authenticator as a parameter. For example to clock in you would write:
+```ruby
+CreateClockEvent.clock_in(job_id, @authenticator)
+```
+There are two ways to interact with the API with this gem, Resources and Actions.
 
-TODO: Write usage instructions here
+### Actions
+Actions include the above example, as well as clocking out, uploading attachments, and registering webhooks.
+```ruby
+CreateClockEvent.clock_out(job_id, @authenticator)
+```
+
+### Resources
+Resources are typically REST structured data such as locations, users, jobs, etc. Resources are accesed with the following code:
+
+```ruby
+resource = Servicetrade::TagInterface.new
+resource_interface = Servicetrade::ApiInterface.new(resource, @authenticator)
+```
+
+With the resource interface you can perform HTTP Verb requests:
+```ruby
+resource_interface.post({name: "MyTestTagNoEnt"})
+resource_interface.post({name: "MyTestTagWithEnt", entityId: 1234567, entityType: 3}
+resource.id = "1234567"
+one_tag = @resource_interface.get
+```
+You can check which verbs are available by
+```ruby
+resource = Servicetrade::TagInterface.new
+resource.allowed_verbs
+-> ["GET", "POST", "PUT"]
+```
+You can also check the API documentation.
 
 ## Development
 

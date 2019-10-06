@@ -11,6 +11,7 @@ module Servicetrade
       @password = password
       @auth_token = 'empty'
       @user = nil
+      get_auth_token
     end
 
     def get_auth_token
