@@ -59,6 +59,15 @@ resource.allowed_verbs
 ```
 You can also check the API documentation.
 
+### Attachments
+
+Currently this gem supports uploading attachments as job paperwork to jobs only, the Servicetrade::UploadAttachment class is availble to be extended to support more upload types.
+
+```ruby
+action = Servicetrade::UploadAttachment.upload_job_paperwork(job_id, File.open('path/to/file.csv', 'rb'), authenticator, (optional description))
+```
+An optional file description can be added. ServiceTrade does not allow for much meta-data on attachments, you can use description with your predifined format to act as a rudimentary meta-data store.
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
