@@ -12,6 +12,7 @@ module Servicetrade
 
   require 'servicetrade/api_interface'
   require 'servicetrade/authenticator'
+  require 'servicetrade/create_clock_event'
   require 'servicetrade/response_processor'
   require 'servicetrade/resource_interface'
   require 'servicetrade/resources/tag_interface'
