@@ -2,16 +2,16 @@ module Servicetrade
 
   class ApiInterface
     attr_accessor :url
-    def initialize(resource)
+    def initialize(resource, authenticator)
       @resource = resource
       @url = Servicetrade.endpoint_host + @resource.url
       @name = @resource.name
+      @authenticator = authenticator
     end
 
     def get(params={})
       set_url
       response = raw_get(params)
-      
       parsed_response = parse_response(response)
       resources = parsed_response
       if paginated?(parsed_response)
@@ -77,7 +77,7 @@ module Servicetrade
         response = RestClient.get @url, 
                         {  
                           cookies: {
-                            PHPSESSID: Servicetrade.auth_token}, 
+                            PHPSESSID: @authenticator.auth_token}, 
                             params: params
                           }                    
       rescue => error
@@ -90,7 +90,7 @@ module Servicetrade
       begin
         response = RestClient.post @url,
                         params.to_json,
-                        {:cookies => {PHPSESSID: Servicetrade.auth_token}} 
+                        {:cookies => {PHPSESSID: @authenticator.auth_token}} 
       rescue => error
         response = error
       end
@@ -102,7 +102,7 @@ module Servicetrade
       begin
         response = RestClient.put @url,
                         params.to_json,
-                        {:cookies => {PHPSESSID: Servicetrade.auth_token}} 
+                        {:cookies => {PHPSESSID: @authenticator.auth_token}} 
 
       rescue => error
         response = error

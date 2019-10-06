@@ -1,15 +1,6 @@
 require "servicetrade/version"
 
 module Servicetrade
-  @@auth_token = "none"
-
-  def self.set_auth_token=(token_string)
-    @@auth_token = token_string
-  end
-
-  def self.auth_token
-    @@auth_token
-  end
 
   def self.endpoint_host
     'https://api.servicetrade.com/api'
@@ -28,6 +19,8 @@ module Servicetrade
   require 'servicetrade/resources/deficiency_interface'
   require 'servicetrade/resources/location_interface'
   require 'servicetrade/resources/clock_event_interface'
+
+  require 'servicetrade/actions/clockin'
 
 
 end

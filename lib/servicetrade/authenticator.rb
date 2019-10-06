@@ -3,9 +3,12 @@ module Servicetrade
 
   class Authenticator
     attr_writer :user, :password
+
+
     def initialize(user, password)
       @user = user
-      @password = password 
+      @password = password
+      @auth_token = 'empty'
     end
 
     def get_auth_token
@@ -14,14 +17,23 @@ module Servicetrade
                         { username: @user,
                           password: @password }
       rescue
-        Servicetrade.set_auth_token = "Error:Invalid/Missing Credentials"
+        self.set_auth_token = "Error:Invalid/Missing Credentials"
         puts "Error:Invalid/Missing Credentials"
       end
       unless response.nil?
-        Servicetrade.set_auth_token = JSON.parse(response.body)["data"]["authToken"]
+        self.set_auth_token = JSON.parse(response.body)["data"]["authToken"]
       end
     end
+
+    def auth_token
+      @auth_token
+    end
+
+    private
+
+      def set_auth_token=(token_string)
+        @auth_token = token_string
+      end
+
   end
-
-
 end

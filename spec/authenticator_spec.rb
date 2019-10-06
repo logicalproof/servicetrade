@@ -8,7 +8,7 @@ RSpec.describe Servicetrade::Authenticator do
       password = ENV["SERVICETRADE_PASSWORD"] #set a valid password in .env
       sa = Servicetrade::Authenticator.new username, password
       sa.get_auth_token
-      expect(Servicetrade.auth_token.length).to eq(26)
+      expect(sa.auth_token.length).to eq(26)
     end
 
   end
@@ -20,7 +20,7 @@ RSpec.describe Servicetrade::Authenticator do
       password = "wrong"
       sa = Servicetrade::Authenticator.new username, password
       sa.get_auth_token
-      expect(Servicetrade.auth_token).to eq("Error:Invalid/Missing Credentials")
+      expect(sa.auth_token).to eq("Error:Invalid/Missing Credentials")
     end
 
   end

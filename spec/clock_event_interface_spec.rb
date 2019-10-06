@@ -24,15 +24,18 @@ RSpec.describe Servicetrade::ClockEventInterface do
   end
 
   context "with a api_interface and a userId" do
-    it "should return a clock event" do
-      username = ENV["SERVICETRADE_USERNAME"] #set a valid username in .env
-      password = ENV["SERVICETRADE_PASSWORD"] #set a valid password in .env
-      sa = Servicetrade::Authenticator.new username, password
-      sa.get_auth_token
-      user = 294416
-      api = Servicetrade::ApiInterface.new(resource)
-      p api
-      p api.get(userId: user, openClockEvents: true)
+    it "should return a clock event if the user is clocked in" do
+      # username = ENV["SERVICETRADE_USERNAME"] #set a valid username in .env
+      # password = ENV["SERVICETRADE_PASSWORD"] #set a valid password in .env
+      # resource = Servicetrade::ClockEventInterface.new
+      # sa = Servicetrade::Authenticator.new username, password
+      # sa.get_auth_token
+      # user = 294416
+      # api = Servicetrade::ApiInterface.new(resource, sa)
+      # job_id = api.get(userId: user, openClockEvents: true).first['job']['id']
+      # job_resource = Servicetrade::JobInterface.new
+      # api = Servicetrade::ApiInterface.new(job_resource, sa)
+      # job = api.get(id: job_id)
     end
   end
 end
