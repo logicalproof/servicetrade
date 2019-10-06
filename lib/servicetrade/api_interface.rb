@@ -87,7 +87,6 @@ module Servicetrade
     end
 
     def raw_post(params={})
-      RestClient.log = 'stdout'
       begin
         response = RestClient.post @url,
                         params,
