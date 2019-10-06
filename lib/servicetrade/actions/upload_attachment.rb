@@ -31,7 +31,7 @@ module Servicetrade
                 entityType:  
                   { type: "entity type", optional: false, allowed_values: [], message: "entity type constant of the entity to attach to (cannot be updated)" },
                 visibility:  
-                  { type: "array(string)", optional: true, allowed_values: [public,customer,subcontractor], message: "visibility granted to these types of viewers outside of the account; combination of: public, customer, subcontractor. 'public' indicates global visibility and overrides the other values. Will default to account default if no value is provided on POST." }
+                  { type: "array(string)", optional: true, allowed_values: ["public","customer","subcontractor"], message: "visibility granted to these types of viewers outside of the account; combination of: public, customer, subcontractor. 'public' indicates global visibility and overrides the other values. Will default to account default if no value is provided on POST." }
                 }
 
       end
