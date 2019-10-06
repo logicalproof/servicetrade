@@ -86,12 +86,19 @@ module Servicetrade
       return response
     end
 
-    def raw_post(params={})
+    def raw_post(params={}, file=nil)
       RestClient.log = 'stdout'
       begin
-        response = RestClient.post @url,
+        if file.nil?
+          response = RestClient.post @url,
                         params.to_json,
-                        {:cookies => {PHPSESSID: @authenticator.auth_token}} 
+                        {:cookies => {PHPSESSID: @authenticator.auth_token}}
+        else
+          response = RestClient.post @url,
+                        myfile: file,
+                        params.to_json,
+                        {:cookies => {PHPSESSID: @authenticator.auth_token}}
+        end
 
       rescue => error
         response = error
