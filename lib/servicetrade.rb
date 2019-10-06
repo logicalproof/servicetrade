@@ -24,6 +24,7 @@ module Servicetrade
 
   require 'servicetrade/actions/clock_in'
   require 'servicetrade/actions/clock_out'
+  require 'servicetrade/actions/upload_attachment'
 
 
 end
