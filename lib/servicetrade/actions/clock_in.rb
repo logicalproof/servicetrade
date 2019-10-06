@@ -1,6 +1,7 @@
 module Servicetrade
   module Action
     class ClockIn
+      attr_reader :url
 
       def initialize(job_id, event_id=nil)
         @job_id = job_id
