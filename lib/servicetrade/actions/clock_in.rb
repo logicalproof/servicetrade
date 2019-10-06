@@ -1,6 +1,6 @@
 module Servicetrade
   module Action
-    class ClockInAction < Servicetrade::ResourceInterface
+    class ClockIn < Servicetrade::ResourceInterface
       def base_url
         return "/clock"
       end
