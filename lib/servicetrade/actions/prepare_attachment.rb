@@ -1,6 +1,6 @@
 module Servicetrade
   module Action
-    class UploadAttachment
+    class PrepareAttachment
       attr_reader :url
 
       def initialize
@@ -31,7 +31,9 @@ module Servicetrade
                 entityType:  
                   { type: "entity type", optional: false, allowed_values: [], message: "entity type constant of the entity to attach to (cannot be updated)" },
                 visibility:  
-                  { type: "array(string)", optional: true, allowed_values: ["public","customer","subcontractor"], message: "visibility granted to these types of viewers outside of the account; combination of: public, customer, subcontractor. 'public' indicates global visibility and overrides the other values. Will default to account default if no value is provided on POST." }
+                  { type: "array(string)", optional: true, allowed_values: ["public","customer","subcontractor"], message: "visibility granted to these types of viewers outside of the account; combination of: public, customer, subcontractor. 'public' indicates global visibility and overrides the other values. Will default to account default if no value is provided on POST." },
+                file:
+                  { type: "ruby File object", optional: false, allowed_values: [], message: "This is the file to upload and must be a Ruby File obeject in the form of File.open('path/to/file/.txt','rb')" }
                 }
 
       end

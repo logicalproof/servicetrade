@@ -13,8 +13,11 @@ module Servicetrade
   require 'servicetrade/api_interface'
   require 'servicetrade/authenticator'
   require 'servicetrade/create_clock_event'
+  require 'servicetrade/upload_attachment'
   require 'servicetrade/response_processor'
   require 'servicetrade/resource_interface'
+
+
   require 'servicetrade/resources/asset_interface'
   require 'servicetrade/resources/tag_interface'
   require 'servicetrade/resources/job_interface'
@@ -24,7 +27,7 @@ module Servicetrade
 
   require 'servicetrade/actions/clock_in'
   require 'servicetrade/actions/clock_out'
-  require 'servicetrade/actions/upload_attachment'
+  require 'servicetrade/actions/prepare_attachment'
 
 
 end

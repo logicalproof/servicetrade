@@ -20,7 +20,7 @@ module Servicetrade
                         { username: @username,
                           password: @password }
       rescue
-        self.set_auth_token = "Error:Invalid/Missing Credentials"
+        @auth_token = "Error:Invalid/Missing Credentials"
         puts "Error:Invalid/Missing Credentials"
       end
       unless response.nil?
