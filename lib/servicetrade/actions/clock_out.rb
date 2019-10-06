@@ -14,7 +14,7 @@ module Servicetrade
       end
 
       def allowed_verbs
-        return ["POST"]
+        return ["Put"]
       end
       
       def base_url
@@ -25,7 +25,7 @@ module Servicetrade
         return "events"
       end
 
-      def post_params
+      def put_params
         return {  lat: {type: "float", optional: true, allowed_values: [], message: "GPS latitude"},
                   lon: {type: "float", optional: true, allowed_values: [], message: "GPS longitude"}
                 }
