@@ -21,7 +21,7 @@ module Servicetrade
   require 'servicetrade/resources/clock_event_interface'
 
   require 'servicetrade/actions/clock_in'
-  require 'servicetrade/actions/clock_in'
+  require 'servicetrade/actions/clock_out'
 
 
 end
