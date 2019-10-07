@@ -9,12 +9,20 @@ module Servicetrade
     end
 
     def self.clock_out(job_id, authenticator)
+      appointment = get_current_appointment(authenticator)
+      if appointment
+        action = Servicetrade::Action::ClockOut.new(job_id)
+        api = Servicetrade::ApiInterface.new(action, authenticator)
+        api.post(appointmentId: appointment['id'])
+      else
+        "Error: No currently clocked in appointment"
+      end
+    end
+
+    def self.get_current_appointment(authenticator)
       resource = Servicetrade::ClockEventInterface.new
       api = Servicetrade::ApiInterface.new(resource, authenticator)
-      appointment_id = api.get(userId: authenticator.user['id'], openClockEvents: true).first['appointment']['id']
-      action = Servicetrade::Action::ClockOut.new(job_id)
-      api = Servicetrade::ApiInterface.new(action, authenticator)
-      api.post(appointmentId: appointment_id)
+      appointment = api.get(userId: authenticator.user['id'], openClockEvents: true).first['appointment']
     end
   end
 end
