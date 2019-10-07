@@ -23,7 +23,6 @@ module Servicetrade
       resource = Servicetrade::ClockEventInterface.new
       api = Servicetrade::ApiInterface.new(resource, authenticator)
       appointment = api.get(userId: authenticator.user['id'], openClockEvents: true).first
-      appointment['appointment'] unless appointment.nil?
     end
   end
 end
