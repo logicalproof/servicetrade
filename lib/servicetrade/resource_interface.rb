@@ -1,3 +1,11 @@
+require 'resources/asset_interface'
+require 'resources/tag_interface'
+require 'resources/job_interface'
+require 'resources/deficiency_interface'
+require 'resources/location_interface'
+require 'resources/clock_event_interface'
+
+
 module Servicetrade
   class ResourceInterface
     attr_reader :url
