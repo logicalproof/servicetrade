@@ -1,7 +1,3 @@
-require 'actions/clock_in'
-require 'actions/clock_out'
-require 'actions/prepare_attachment'
-
 module Servicetrade
 
   class ApiInterface
