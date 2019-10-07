@@ -10,7 +10,7 @@ module Servicetrade
 
     def self.clock_out(job_id, authenticator)
       appointment = get_current_appointment(authenticator)
-      if appointment
+      unless appointment.empty?
         action = Servicetrade::Action::ClockOut.new(job_id)
         api = Servicetrade::ApiInterface.new(action, authenticator)
         api.post(appointmentId: appointment['id'])
