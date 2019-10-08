@@ -26,14 +26,15 @@ To start you must authenticate with the ServiceTrade API:
 ```
 Once you have authenticated all API requests will require you to pass the authenticator as a parameter. For example to clock in you would write:
 ```ruby
-CreateClockEvent.clock_in(job_id, @authenticator)
+Servicetrade::CreateClockEvent.clock_in(job_id, @authenticator)
 ```
 There are two ways to interact with the API with this gem, Resources and Actions.
 
 ### Actions
 Actions include the above example, as well as clocking out, uploading attachments, and registering webhooks.
 ```ruby
-CreateClockEvent.clock_out(job_id, @authenticator)
+Servicetrade::CreateClockEvent.clock_out(job_id, @authenticator)
+Servicetrade::CreateClockEvent.get_current_job(authenticator)
 ```
 
 ### Resources
