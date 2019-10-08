@@ -22,15 +22,19 @@ module Servicetrade
     def self.get_current_job(authenticator)
       resource = Servicetrade::ClockEventInterface.new
       api = Servicetrade::ApiInterface.new(resource, authenticator)
-      job = api.get(userId: authenticator.user['id'], openClockEvents: true).first
+      api.get(userId: authenticator.user['id'], openClockEvents: true).first
     end
 
     def self.get_current_appointment(authenticator)
       job = get_current_job(authenticator)
-      if job["appointment"]
-        job["appointment"]
+      if job.nil?
+        return "Error:NoClockIn"
       else
-        return job
+        if job["appointment"]
+          job["appointment"]
+        else
+          return job
+        end
       end
     end
 
