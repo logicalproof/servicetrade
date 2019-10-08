@@ -19,10 +19,20 @@ module Servicetrade
       end
     end
 
-    def self.get_current_appointment(authenticator)
+    def self.get_current_job(authenticator)
       resource = Servicetrade::ClockEventInterface.new
       api = Servicetrade::ApiInterface.new(resource, authenticator)
-      appointment = api.get(userId: authenticator.user['id'], openClockEvents: true).first
+      job = api.get(userId: authenticator.user['id'], openClockEvents: true).first
     end
+
+    def self.get_current_appointment(authenticator)
+      job = get_current_job(authenticator)
+      if job["appointment"]
+        job["appointment"]
+      else
+        return job
+      end
+    end
+
   end
 end
