@@ -1,4 +1,4 @@
-require "servicetrade/version"
+require File.dirname(__FILE__) +  '/servicetrade/version.rb'
 
 module Servicetrade
 
@@ -10,24 +10,24 @@ module Servicetrade
   require 'restclient'
   require 'json'
 
-  require 'servicetrade/api_interface'
-  require 'servicetrade/authenticator'
-  require 'servicetrade/create_clock_event'
-  require 'servicetrade/upload_attachment'
-  require 'servicetrade/response_processor'
-  require 'servicetrade/resource_interface'
+  require File.dirname(__FILE__) +  '/servicetrade/api_interface'
+  require File.dirname(__FILE__) +  '/servicetrade/authenticator'
+  require File.dirname(__FILE__) +  '/servicetrade/create_clock_event'
+  require File.dirname(__FILE__) +  '/servicetrade/upload_attachment'
+  require File.dirname(__FILE__) +  '/servicetrade/response_processor'
+  require File.dirname(__FILE__) +  '/servicetrade/resource_interface'
 
 
-  require 'servicetrade/resources/asset_interface'
-  require 'servicetrade/resources/tag_interface'
-  require 'servicetrade/resources/job_interface'
-  require 'servicetrade/resources/deficiency_interface'
-  require 'servicetrade/resources/location_interface'
-  require 'servicetrade/resources/clock_event_interface'
+  require File.dirname(__FILE__) +  '/servicetrade/resources/asset_interface'
+  require File.dirname(__FILE__) +  '/servicetrade/resources/tag_interface'
+  require File.dirname(__FILE__) +  '/servicetrade/resources/job_interface'
+  require File.dirname(__FILE__) +  '/servicetrade/resources/deficiency_interface'
+  require File.dirname(__FILE__) +  '/servicetrade/resources/location_interface'
+  require File.dirname(__FILE__) +  '/servicetrade/resources/clock_event_interface'
 
-  require 'servicetrade/actions/clock_in'
-  require 'servicetrade/actions/clock_out'
-  require 'servicetrade/actions/prepare_attachment'
+  require File.dirname(__FILE__) +  '/servicetrade/actions/clock_in'
+  require File.dirname(__FILE__) +  '/servicetrade/actions/clock_out'
+  require File.dirname(__FILE__) +  '/servicetrade/actions/prepare_attachment'
 
 
 end

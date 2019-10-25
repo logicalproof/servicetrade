@@ -2,7 +2,7 @@ require "spec_helper"
 
 RSpec.describe Servicetrade::ClockEventInterface do
   resource = Servicetrade::ClockEventInterface.new
-  context "when a clock event interface is created" do 
+  context "when a clock event interface is created" do
     it "should return a list of allowed verbs" do
       expect(resource.allowed_verbs).to eq(["GET"])
     end

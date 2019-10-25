@@ -14,7 +14,7 @@ RSpec.describe Servicetrade::ApiInterface do
       @resource = Servicetrade::JobInterface.new
       @resource_interface = Servicetrade::ApiInterface.new(@resource, @sa)
     end
-    it "should allow a job resource class" do 
+    it "should allow a job resource class" do
       expect(@resource_interface.url).to eq("https://api.servicetrade.com/api/job")
     end
     it "should allow a get request that retrieves multiple resources" do
@@ -36,7 +36,7 @@ RSpec.describe Servicetrade::ApiInterface do
         @resource = Servicetrade::TagInterface.new
         @resource_interface = Servicetrade::ApiInterface.new(@resource, @sa)
       end
-      it "should allow a tag @resource class" do 
+      it "should allow a tag @resource class" do
         expect(@resource_interface.url).to eq("https://api.servicetrade.com/api/tag")
       end
       it "should allow a get request that retrieves multiple @resources" do
