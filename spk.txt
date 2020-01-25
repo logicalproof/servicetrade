@@ -1,0 +1,343 @@
+{
+  "location_in_site": {
+    "type": "string",
+    "orderIndex": 0
+  },
+  "type": {
+    "type": "string",
+    "other": "Other",
+    "options": [
+      "Wet",
+      "Dry",
+      "Pre-action",
+      "Deluge",
+      "Anti-Freeze Loop",
+      "Unknown"
+    ],
+    "orderIndex": 1
+  },
+  "sprinkler_style": {
+    "Sprinker Style": "string",
+    "other": "Other",
+    "options": [
+      "Upright",
+      "Pendant",
+      "Horizontal Sidewall",
+      "Vertical Sidewall",
+      "Concealed"
+    ],
+    "orderIndex": 2
+  },
+  "number": {
+    "type": "int",
+    "orderIndex": 3
+  },
+  "size": {
+    "type": "string",
+    "orderIndex": 4
+  },
+  "riser_location": {
+    "type": "string",
+    "orderIndex": 5
+  },
+  "riser_qty": {
+    "type": "int",
+    "orderIndex": 6
+  },
+  "head_qty": {
+    "type": "int",
+    "orderIndex": 7
+  },
+  "system_qty": {
+    "type": "int",
+    "orderIndex": 8
+  },
+  "make": {
+    "type": "string",
+    "orderIndex": 9
+  },
+  "model": {
+    "type": "string",
+    "orderIndex": 10
+  },
+  "check_valve_size": {
+    "type": "float",
+    "orderIndex": 11
+  },
+  "check_valve_make": {
+    "type": "string",
+    "orderIndex": 12
+  },
+  "check_valve_model": {
+    "type": "string",
+    "orderIndex": 13
+  },
+  "check_valve_type": {
+    "type": "string",
+    "orderIndex": 14
+  },
+  "check_valve_qty": {
+    "type": "int",
+    "orderIndex": 15
+  },
+  "check_valve_serial": {
+    "type": "string",
+    "orderIndex": 16
+  },
+  "check_valve_location": {
+    "type": "string",
+    "orderIndex": 17
+  },
+  "alarm_valve_size": {
+    "type": "float",
+    "orderIndex": 18
+  },
+  "alarm_valve_make": {
+    "type": "string",
+    "orderIndex": 19
+  },
+  "alarm_valve_model": {
+    "type": "string",
+    "orderIndex": 20
+  },
+  "alarm_valve_qty": {
+    "type": "int",
+    "orderIndex": 21
+  },
+  "city_connection_valve_make": {
+    "type": "string",
+    "orderIndex": 22
+  },
+  "city_connection_valve_qty": {
+    "type": "int",
+    "orderIndex": 23
+  },
+  "supply_valve_make": {
+    "type": "string",
+    "orderIndex": 24
+  },
+  "supply_valve_qty": {
+    "type": "int",
+    "orderIndex": 25
+  },
+  "interior_valve_make": {
+    "type": "string",
+    "orderIndex": 26
+  },
+  "interior_valve_qty": {
+    "type": "int",
+    "orderIndex": 27
+  },
+  "riser_valve_make": {
+    "type": "string",
+    "orderIndex": 28
+  },
+  "riser_valve_qty": {
+    "type": "int",
+    "orderIndex": 29
+  },
+  "control_valve_size": {
+    "type": "float",
+    "orderIndex": 30
+  },
+  "control_valve_location": {
+    "type": "string",
+    "orderIndex": 31
+  },
+  "control_valve_make": {
+    "type": "string",
+    "orderIndex": 32
+  },
+  "control_valve_model": {
+    "type": "string",
+    "orderIndex": 33
+  },
+  "control_valve_qty": {
+    "type": "int",
+    "orderIndex": 34
+  },
+  "control_panel_location": {
+    "type": "string",
+    "orderIndex": 35
+  },
+  "control_panel_make": {
+    "type": "string",
+    "orderIndex": 36
+  },
+  "control_panel_model": {
+    "type": "string",
+    "orderIndex": 37
+  },
+  "control_panel_type": {
+    "type": "string",
+    "orderIndex": 38
+  },
+  "monitoring_company_name": {
+    "type": "string",
+    "orderIndex": 39
+  },
+  "qty_antifreeze_loops": {
+    "type": "int",
+    "orderIndex": 40
+  },
+  "dry_valve_size": {
+    "type": "float",
+    "orderIndex": 41
+  },
+  "dry_valve_make": {
+    "type": "string",
+    "orderIndex": 42
+  },
+  "dry_valve_model": {
+    "type": "string",
+    "orderIndex": 43
+  },
+  "preaction_deluge_valve_size": {
+    "type": "float",
+    "display": "Preaction/deluge valve size",
+    "orderIndex": 44
+  },
+  "preaction_deluge_valve_make": {
+    "type": "string",
+    "display": "Preaction/deluge valve make",
+    "orderIndex": 45
+  },
+  "preaction_deluge_valve_model": {
+    "type": "string",
+    "display": "Preaction/deluge valve model",
+    "orderIndex": 46
+  },
+  "tamper_switch_qty": {
+    "type": "string",
+    "orderIndex": 47
+  },
+  "tamper_switch_make": {
+    "type": "string",
+    "display": "Tamper Switch Manufacturer",
+    "orderIndex": 48
+  },
+  "tamper_switch_model": {
+    "type": "string",
+    "orderIndex": 49
+  },
+  "flow_switch_qty": {
+    "type": "string",
+    "orderIndex": 50
+  },
+  "flow_switch_make": {
+    "type": "string",
+    "display": "Flow Switch Manufacturer",
+    "orderIndex": 51
+  },
+  "flow_switch_model": {
+    "type": "string",
+    "orderIndex": 52
+  },
+  "water_supplies": {
+    "type": "string",
+    "options": [
+      "City",
+      "Gravity Tank"
+    ],
+    "other": "Other",
+    "orderIndex": 53
+  },
+  "city_pressure_test_pipe_size": {
+    "type": "string",
+    "display": "City Pressure Drain Test Pipe Size",
+    "orderIndex": 54
+  },
+  "city_pressure_test_static_before": {
+    "type": "string",
+    "display": "City Pressure Drain Test Static Pressure (Before)",
+    "orderIndex": 55
+  },
+  "city_pressure_test_flow": {
+    "type": "string",
+    "display": "City Pressure Drain Test Flow Pressure",
+    "orderIndex": 56
+  },
+  "city_pressure_test_static_after": {
+    "type": "string",
+    "display": "City Pressure Drain Test Static Pressure (After)",
+    "orderIndex": 57
+  },
+  "seconds_to_stabilize": {
+    "type": "string",
+    "display": "Seconds to Stabilize",
+    "orderIndex": 58
+  },
+  "fire_pump_test_pipe_size": {
+    "type": "string",
+    "display": "Fire Pump Drain Test Pipe Size",
+    "orderIndex": 59
+  },
+  "fire_pump_test_static_before": {
+    "type": "string",
+    "display": "Fire Pump Drain Test Static Pressure (Before)",
+    "orderIndex": 60
+  },
+  "fire_pump_test_flow": {
+    "type": "string",
+    "display": "Fire Pump Drain Test Flow Pressure",
+    "orderIndex": 61
+  },
+  "fire_pump_test_static_after": {
+    "type": "string",
+    "display": "Fire Pump Drain Test Static Pressure (After)",
+    "orderIndex": 62
+  },
+  "last_insp_date": {
+    "type": "date",
+    "display": "Last Inspection Date",
+    "orderIndex": 63
+  },
+  "next_5y_checkvalve_due": {
+    "type": "date",
+    "display": "Next 5 Year Check Valve Due Date",
+    "orderIndex": 64
+  },
+  "next_5y_internalpiping_inspection_due": {
+    "type": "date",
+    "display": "Next 5 Year Internal Piping Inspection Due Date",
+    "orderIndex": 65
+  },
+  "manufacture_date": {
+    "type": "date",
+    "orderIndex": 66
+  },
+  "standard_response_sprinkler_head_installation_year": {
+    "type": "string",
+    "display": "Standard Response Sprinkler Head Installation Year(s)",
+    "orderIndex": 67
+  },
+  "quick_response_sprinkler_head_installation_year": {
+    "type": "string",
+    "display": "Quick Response Sprinkler Head Installation Year(s)",
+    "orderIndex": 68
+  },
+  "dry_type_sprinkler_head_installation_year": {
+    "type": "string",
+    "display": "Dry-Type Sprinkler Head Installation Year(s)",
+    "orderIndex": 69
+  },
+  "residential_sprinkler_head_installation_year": {
+    "type": "string",
+    "display": "Residential Sprinkler Head Installation Year(s)",
+    "orderIndex": 70
+  },
+  "gauge_installation_year": {
+    "type": "string",
+    "display": "Gauge Installation Year(s)",
+    "orderIndex": 71
+  },
+  "test_valve_location": {
+    "type": "string",
+    "display": "Test Valve Location",
+    "orderIndex": 72
+  },
+  "notes": {
+    "type": "text",
+    "orderIndex": 73
+  }
+}
