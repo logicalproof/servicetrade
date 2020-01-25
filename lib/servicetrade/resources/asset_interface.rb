@@ -23,8 +23,6 @@ module Servicetrade
               }
     end
 
-  end
-
 
   def post_params
       post_parameters = self.put_params
