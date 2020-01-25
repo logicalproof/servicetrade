@@ -15,7 +15,7 @@ module Servicetrade
 
     def post_params
       post_parameters = self.put_params
-      post_parameters[:assetID] = {type: "integer", optional: false, allowed_values: [], message: "must be an existing assetId"}
+      post_parameters[:assetId] = {type: "integer", optional: false, allowed_values: [], message: "must be an existing assetId"}
       return post_parameters
     end
 

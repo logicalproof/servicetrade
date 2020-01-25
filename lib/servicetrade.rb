@@ -19,6 +19,7 @@ module Servicetrade
 
 
   require File.dirname(__FILE__) +  '/servicetrade/resources/asset_interface'
+  require File.dirname(__FILE__) +  '/servicetrade/resources/asset_definition_interface'
   require File.dirname(__FILE__) +  '/servicetrade/resources/tag_interface'
   require File.dirname(__FILE__) +  '/servicetrade/resources/job_interface'
   require File.dirname(__FILE__) +  '/servicetrade/resources/deficiency_interface'
