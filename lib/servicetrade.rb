@@ -25,6 +25,7 @@ module Servicetrade
   require File.dirname(__FILE__) +  '/servicetrade/resources/deficiency_interface'
   require File.dirname(__FILE__) +  '/servicetrade/resources/location_interface'
   require File.dirname(__FILE__) +  '/servicetrade/resources/clock_event_interface'
+  require File.dirname(__FILE__) +  '/servicetrade/resources/service_request'
 
   require File.dirname(__FILE__) +  '/servicetrade/actions/clock_in'
   require File.dirname(__FILE__) +  '/servicetrade/actions/clock_out'
