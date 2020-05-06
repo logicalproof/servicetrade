@@ -1,16 +1,16 @@
 module Servicetrade
-  class ServiceRequest < Servicetrade::ResourceInterface
+  class ServiceRecurrence < Servicetrade::ResourceInterface
     
     def allowed_verbs
       return ["GET", "POST", "PUT", "DELETE"]
     end
 
     def base_url
-      return "/servicerequest"
+      return "/servicerecurrence"
     end
 
     def name
-      return "servicerequest"
+      return "servicerecurrence"
     end
 
     def post_params
