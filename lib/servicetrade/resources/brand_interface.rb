@@ -1,5 +1,5 @@
 module Servicetrade
-  class Brand < Servicetrade::ResourceInterface
+  class BrandInterface < Servicetrade::ResourceInterface
     
     def allowed_verbs
       return ["GET"]
