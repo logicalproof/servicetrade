@@ -1,3 +1,3 @@
 module Servicetrade
-  VERSION = "0.2.64.pre"
+  VERSION = "0.2.65.pre"
 end

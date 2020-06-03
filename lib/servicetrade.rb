@@ -16,7 +16,7 @@ module Servicetrade
   require File.dirname(__FILE__) +  '/servicetrade/upload_attachment'
   require File.dirname(__FILE__) +  '/servicetrade/response_processor'
   require File.dirname(__FILE__) +  '/servicetrade/resource_interface'
-
+  
 
   require File.dirname(__FILE__) +  '/servicetrade/resources/asset_interface'
   require File.dirname(__FILE__) +  '/servicetrade/resources/asset_definition_interface'
@@ -27,6 +27,8 @@ module Servicetrade
   require File.dirname(__FILE__) +  '/servicetrade/resources/clock_event_interface'
   require File.dirname(__FILE__) +  '/servicetrade/resources/service_request'
   require File.dirname(__FILE__) +  '/servicetrade/resources/service_recurrence'
+  require File.dirname(__FILE__) +  '/servicetrade/resources/brand_interface'
+  require File.dirname(__FILE__) +  '/servicetrade/resources/attachment_interface'
 
   require File.dirname(__FILE__) +  '/servicetrade/actions/clock_in'
   require File.dirname(__FILE__) +  '/servicetrade/actions/clock_out'
