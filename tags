@@ -1,0 +1,179 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Action	lib/servicetrade/actions/clock_in.rb	/^  module Action$/;"	m	class:Servicetrade
+Action	lib/servicetrade/actions/clock_out.rb	/^  module Action$/;"	m	class:Servicetrade
+Action	lib/servicetrade/actions/prepare_attachment.rb	/^  module Action$/;"	m	class:Servicetrade
+ApiInterface	lib/servicetrade/api_interface.rb	/^  class ApiInterface$/;"	c	class:Servicetrade
+AssetDefinitionInterface	lib/servicetrade/resources/asset_definition_interface.rb	/^  class AssetDefinitionInterface < Servicetrade::ResourceInterface$/;"	c	class:Servicetrade
+AssetInterface	lib/servicetrade/resources/asset_interface.rb	/^  class AssetInterface < Servicetrade::ResourceInterface$/;"	c	class:Servicetrade
+AttachmentInterface	lib/servicetrade/resources/attachment_interface.rb	/^  class AttachmentInterface < Servicetrade::ResourceInterface$/;"	c	class:Servicetrade
+Authenticator	lib/servicetrade/authenticator.rb	/^  class Authenticator$/;"	c	class:Servicetrade
+BrandInterface	lib/servicetrade/resources/brand_interface.rb	/^  class BrandInterface < Servicetrade::ResourceInterface$/;"	c	class:Servicetrade
+ClockEventInterface	lib/servicetrade/resources/clock_event_interface.rb	/^  class ClockEventInterface < Servicetrade::ResourceInterface$/;"	c	class:Servicetrade
+ClockIn	lib/servicetrade/actions/clock_in.rb	/^    class ClockIn$/;"	c	class:Servicetrade.Action
+ClockOut	lib/servicetrade/actions/clock_out.rb	/^    class ClockOut$/;"	c	class:Servicetrade.Action
+CreateClockEvent	lib/servicetrade/create_clock_event.rb	/^  class CreateClockEvent$/;"	c	class:Servicetrade
+DeficiencyInterface	lib/servicetrade/resources/deficiency_interface.rb	/^  class DeficiencyInterface < Servicetrade::ResourceInterface$/;"	c	class:Servicetrade
+InvoiceInterface	lib/servicetrade/resources/invoice_interface.rb	/^  class InvoiceInterface < Servicetrade::ResourceInterface$/;"	c	class:Servicetrade
+JobInterface	lib/servicetrade/resources/job_interface.rb	/^  class JobInterface < Servicetrade::ResourceInterface$/;"	c	class:Servicetrade
+JobItemInterface	lib/servicetrade/resources/job_item_interface.rb	/^  class JobItemInterface < Servicetrade::ResourceInterface$/;"	c	class:Servicetrade
+LocationInterface	lib/servicetrade/resources/location_interface.rb	/^  class LocationInterface < Servicetrade::ResourceInterface$/;"	c	class:Servicetrade
+PrepareAttachment	lib/servicetrade/actions/prepare_attachment.rb	/^    class PrepareAttachment$/;"	c	class:Servicetrade.Action
+ResourceInterface	lib/servicetrade/resource_interface.rb	/^  class ResourceInterface$/;"	c	class:Servicetrade
+ResponseProcessor	lib/servicetrade/response_processor.rb	/^  class ResponseProcessor$/;"	c	class:Servicetrade
+ServiceRecurrence	lib/servicetrade/resources/service_recurrence.rb	/^  class ServiceRecurrence < Servicetrade::ResourceInterface$/;"	c	class:Servicetrade
+ServiceRequest	lib/servicetrade/resources/service_request.rb	/^  class ServiceRequest < Servicetrade::ResourceInterface$/;"	c	class:Servicetrade
+Servicetrade	lib/servicetrade.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/actions/clock_in.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/actions/clock_out.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/actions/prepare_attachment.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/api_interface.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/authenticator.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/create_clock_event.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resource_interface.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resources/asset_definition_interface.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resources/asset_interface.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resources/attachment_interface.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resources/brand_interface.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resources/clock_event_interface.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resources/deficiency_interface.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resources/invoice_interface.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resources/job_interface.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resources/job_item_interface.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resources/location_interface.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resources/service_recurrence.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resources/service_request.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resources/tag_interface.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/resources/warehouse_interface.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/response_processor.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/upload_attachment.rb	/^module Servicetrade$/;"	m
+Servicetrade	lib/servicetrade/version.rb	/^module Servicetrade$/;"	m
+TagInterface	lib/servicetrade/resources/tag_interface.rb	/^  class TagInterface < Servicetrade::ResourceInterface$/;"	c	class:Servicetrade
+UploadAttachment	lib/servicetrade/upload_attachment.rb	/^class UploadAttachment$/;"	c	class:Servicetrade
+WarehouseInterface	lib/servicetrade/resources/warehouse_interface.rb	/^  class WarehouseInterface < Servicetrade::ResourceInterface$/;"	c	class:Servicetrade
+add_id_to_url	lib/servicetrade/resource_interface.rb	/^      def add_id_to_url(id)$/;"	f	class:Servicetrade.ResourceInterface
+allowed_verbs	lib/servicetrade/actions/clock_in.rb	/^      def allowed_verbs$/;"	f	class:Servicetrade.Action.ClockIn
+allowed_verbs	lib/servicetrade/actions/clock_out.rb	/^      def allowed_verbs$/;"	f	class:Servicetrade.Action.ClockOut
+allowed_verbs	lib/servicetrade/actions/prepare_attachment.rb	/^      def allowed_verbs$/;"	f	class:Servicetrade.Action.PrepareAttachment
+allowed_verbs	lib/servicetrade/resources/asset_definition_interface.rb	/^    def allowed_verbs$/;"	f	class:Servicetrade.AssetDefinitionInterface
+allowed_verbs	lib/servicetrade/resources/asset_interface.rb	/^    def allowed_verbs$/;"	f	class:Servicetrade.AssetInterface
+allowed_verbs	lib/servicetrade/resources/attachment_interface.rb	/^    def allowed_verbs$/;"	f	class:Servicetrade.AttachmentInterface
+allowed_verbs	lib/servicetrade/resources/brand_interface.rb	/^    def allowed_verbs$/;"	f	class:Servicetrade.BrandInterface
+allowed_verbs	lib/servicetrade/resources/clock_event_interface.rb	/^    def allowed_verbs$/;"	f	class:Servicetrade.ClockEventInterface
+allowed_verbs	lib/servicetrade/resources/deficiency_interface.rb	/^    def allowed_verbs$/;"	f	class:Servicetrade.DeficiencyInterface
+allowed_verbs	lib/servicetrade/resources/invoice_interface.rb	/^    def allowed_verbs$/;"	f	class:Servicetrade.InvoiceInterface
+allowed_verbs	lib/servicetrade/resources/job_interface.rb	/^    def allowed_verbs$/;"	f	class:Servicetrade.JobInterface
+allowed_verbs	lib/servicetrade/resources/job_item_interface.rb	/^    def allowed_verbs$/;"	f	class:Servicetrade.JobItemInterface
+allowed_verbs	lib/servicetrade/resources/location_interface.rb	/^    def allowed_verbs$/;"	f	class:Servicetrade.LocationInterface
+allowed_verbs	lib/servicetrade/resources/service_recurrence.rb	/^    def allowed_verbs$/;"	f	class:Servicetrade.ServiceRecurrence
+allowed_verbs	lib/servicetrade/resources/service_request.rb	/^    def allowed_verbs$/;"	f	class:Servicetrade.ServiceRequest
+allowed_verbs	lib/servicetrade/resources/tag_interface.rb	/^    def allowed_verbs$/;"	f	class:Servicetrade.TagInterface
+allowed_verbs	lib/servicetrade/resources/warehouse_interface.rb	/^    def allowed_verbs$/;"	f	class:Servicetrade.WarehouseInterface
+auth_token	lib/servicetrade/authenticator.rb	/^    def auth_token$/;"	f	class:Servicetrade.Authenticator
+base_url	lib/servicetrade/actions/clock_in.rb	/^      def base_url$/;"	f	class:Servicetrade.Action.ClockIn
+base_url	lib/servicetrade/actions/clock_out.rb	/^      def base_url$/;"	f	class:Servicetrade.Action.ClockOut
+base_url	lib/servicetrade/actions/prepare_attachment.rb	/^      def base_url$/;"	f	class:Servicetrade.Action.PrepareAttachment
+base_url	lib/servicetrade/resource_interface.rb	/^    def base_url$/;"	f	class:Servicetrade.ResourceInterface
+base_url	lib/servicetrade/resources/asset_definition_interface.rb	/^    def base_url$/;"	f	class:Servicetrade.AssetDefinitionInterface
+base_url	lib/servicetrade/resources/asset_interface.rb	/^    def base_url$/;"	f	class:Servicetrade.AssetInterface
+base_url	lib/servicetrade/resources/attachment_interface.rb	/^    def base_url$/;"	f	class:Servicetrade.AttachmentInterface
+base_url	lib/servicetrade/resources/brand_interface.rb	/^    def base_url$/;"	f	class:Servicetrade.BrandInterface
+base_url	lib/servicetrade/resources/clock_event_interface.rb	/^    def base_url$/;"	f	class:Servicetrade.ClockEventInterface
+base_url	lib/servicetrade/resources/deficiency_interface.rb	/^    def base_url$/;"	f	class:Servicetrade.DeficiencyInterface
+base_url	lib/servicetrade/resources/invoice_interface.rb	/^    def base_url$/;"	f	class:Servicetrade.InvoiceInterface
+base_url	lib/servicetrade/resources/job_interface.rb	/^    def base_url$/;"	f	class:Servicetrade.JobInterface
+base_url	lib/servicetrade/resources/job_item_interface.rb	/^    def base_url$/;"	f	class:Servicetrade.JobItemInterface
+base_url	lib/servicetrade/resources/location_interface.rb	/^    def base_url$/;"	f	class:Servicetrade.LocationInterface
+base_url	lib/servicetrade/resources/service_recurrence.rb	/^    def base_url$/;"	f	class:Servicetrade.ServiceRecurrence
+base_url	lib/servicetrade/resources/service_request.rb	/^    def base_url$/;"	f	class:Servicetrade.ServiceRequest
+base_url	lib/servicetrade/resources/tag_interface.rb	/^    def base_url$/;"	f	class:Servicetrade.TagInterface
+base_url	lib/servicetrade/resources/warehouse_interface.rb	/^    def base_url$/;"	f	class:Servicetrade.WarehouseInterface
+clock_in	lib/servicetrade/create_clock_event.rb	/^    def self.clock_in(job_id, authenticator)$/;"	F	class:Servicetrade.CreateClockEvent
+clock_out	lib/servicetrade/create_clock_event.rb	/^    def self.clock_out(job_id, authenticator)$/;"	F	class:Servicetrade.CreateClockEvent
+endpoint_host	lib/servicetrade.rb	/^  def self.endpoint_host$/;"	F	class:Servicetrade
+get	lib/servicetrade/api_interface.rb	/^    def get(params={})$/;"	f	class:Servicetrade.ApiInterface
+get_auth_token	lib/servicetrade/authenticator.rb	/^    def get_auth_token$/;"	f	class:Servicetrade.Authenticator
+get_current_appointment	lib/servicetrade/create_clock_event.rb	/^    def self.get_current_appointment(authenticator)$/;"	F	class:Servicetrade.CreateClockEvent
+get_current_job	lib/servicetrade/create_clock_event.rb	/^    def self.get_current_job(authenticator)$/;"	F	class:Servicetrade.CreateClockEvent
+get_paginated_resource	lib/servicetrade/api_interface.rb	/^    def get_paginated_resource(response, params)$/;"	f	class:Servicetrade.ApiInterface
+get_params	lib/servicetrade/resources/asset_definition_interface.rb	/^    def get_params$/;"	f	class:Servicetrade.AssetDefinitionInterface
+get_params	lib/servicetrade/resources/asset_interface.rb	/^    def get_params$/;"	f	class:Servicetrade.AssetInterface
+get_params	lib/servicetrade/resources/attachment_interface.rb	/^    def get_params$/;"	f	class:Servicetrade.AttachmentInterface
+get_params	lib/servicetrade/resources/brand_interface.rb	/^    def get_params$/;"	f	class:Servicetrade.BrandInterface
+get_params	lib/servicetrade/resources/clock_event_interface.rb	/^    def get_params$/;"	f	class:Servicetrade.ClockEventInterface
+get_params	lib/servicetrade/resources/deficiency_interface.rb	/^    def get_params$/;"	f	class:Servicetrade.DeficiencyInterface
+get_params	lib/servicetrade/resources/invoice_interface.rb	/^    def get_params$/;"	f	class:Servicetrade.InvoiceInterface
+get_params	lib/servicetrade/resources/job_interface.rb	/^    def get_params$/;"	f	class:Servicetrade.JobInterface
+get_params	lib/servicetrade/resources/job_item_interface.rb	/^    def get_params$/;"	f	class:Servicetrade.JobItemInterface
+get_params	lib/servicetrade/resources/location_interface.rb	/^    def get_params$/;"	f	class:Servicetrade.LocationInterface
+get_params	lib/servicetrade/resources/service_recurrence.rb	/^    def get_params$/;"	f	class:Servicetrade.ServiceRecurrence
+get_params	lib/servicetrade/resources/service_request.rb	/^    def get_params$/;"	f	class:Servicetrade.ServiceRequest
+get_params	lib/servicetrade/resources/tag_interface.rb	/^    def get_params$/;"	f	class:Servicetrade.TagInterface
+get_params	lib/servicetrade/resources/warehouse_interface.rb	/^    def get_params$/;"	f	class:Servicetrade.WarehouseInterface
+get_required_post_params	lib/servicetrade/api_interface.rb	/^    def get_required_post_params$/;"	f	class:Servicetrade
+get_required_put_params	lib/servicetrade/api_interface.rb	/^    def get_required_put_params$/;"	f	class:Servicetrade
+id	lib/servicetrade/resource_interface.rb	/^    def id$/;"	f	class:Servicetrade.ResourceInterface
+id=	lib/servicetrade/resource_interface.rb	/^    def id=(id)$/;"	f	class:Servicetrade.ResourceInterface
+initialize	lib/servicetrade/actions/clock_in.rb	/^      def initialize(job_id, event_id=nil)$/;"	f	class:Servicetrade.Action.ClockIn
+initialize	lib/servicetrade/actions/clock_out.rb	/^      def initialize(job_id, event_id=nil)$/;"	f	class:Servicetrade.Action.ClockOut
+initialize	lib/servicetrade/actions/prepare_attachment.rb	/^      def initialize$/;"	f	class:Servicetrade.Action.PrepareAttachment
+initialize	lib/servicetrade/api_interface.rb	/^    def initialize(resource, authenticator)$/;"	f	class:Servicetrade.ApiInterface
+initialize	lib/servicetrade/authenticator.rb	/^    def initialize(username, password)$/;"	f	class:Servicetrade.Authenticator
+initialize	lib/servicetrade/resource_interface.rb	/^    def initialize(id=nil)$/;"	f	class:Servicetrade.ResourceInterface
+initialize	lib/servicetrade/response_processor.rb	/^    def initialize$/;"	f	class:Servicetrade.ResponseProcessor
+name	lib/servicetrade/actions/clock_in.rb	/^      def name$/;"	f	class:Servicetrade.Action.ClockIn
+name	lib/servicetrade/actions/clock_out.rb	/^      def name$/;"	f	class:Servicetrade.Action.ClockOut
+name	lib/servicetrade/actions/prepare_attachment.rb	/^      def name$/;"	f	class:Servicetrade.Action.PrepareAttachment
+name	lib/servicetrade/resources/asset_definition_interface.rb	/^    def name$/;"	f	class:Servicetrade.AssetDefinitionInterface
+name	lib/servicetrade/resources/asset_interface.rb	/^    def name$/;"	f	class:Servicetrade.AssetInterface
+name	lib/servicetrade/resources/attachment_interface.rb	/^    def name$/;"	f	class:Servicetrade.AttachmentInterface
+name	lib/servicetrade/resources/brand_interface.rb	/^    def name$/;"	f	class:Servicetrade.BrandInterface
+name	lib/servicetrade/resources/clock_event_interface.rb	/^    def name$/;"	f	class:Servicetrade.ClockEventInterface
+name	lib/servicetrade/resources/deficiency_interface.rb	/^    def name$/;"	f	class:Servicetrade.DeficiencyInterface
+name	lib/servicetrade/resources/invoice_interface.rb	/^    def name$/;"	f	class:Servicetrade.InvoiceInterface
+name	lib/servicetrade/resources/job_interface.rb	/^    def name$/;"	f	class:Servicetrade.JobInterface
+name	lib/servicetrade/resources/job_item_interface.rb	/^    def name$/;"	f	class:Servicetrade.JobItemInterface
+name	lib/servicetrade/resources/location_interface.rb	/^    def name$/;"	f	class:Servicetrade.LocationInterface
+name	lib/servicetrade/resources/service_recurrence.rb	/^    def name$/;"	f	class:Servicetrade.ServiceRecurrence
+name	lib/servicetrade/resources/service_request.rb	/^    def name$/;"	f	class:Servicetrade.ServiceRequest
+name	lib/servicetrade/resources/tag_interface.rb	/^    def name$/;"	f	class:Servicetrade.TagInterface
+name	lib/servicetrade/resources/warehouse_interface.rb	/^    def name$/;"	f	class:Servicetrade.WarehouseInterface
+paginated?	lib/servicetrade/api_interface.rb	/^    def paginated?(response)$/;"	f	class:Servicetrade.ApiInterface
+parse_response	lib/servicetrade/api_interface.rb	/^    def parse_response(response)$/;"	f	class:Servicetrade.ApiInterface
+post	lib/servicetrade/api_interface.rb	/^    def post(params={})$/;"	f	class:Servicetrade.ApiInterface
+post_params	lib/servicetrade/actions/clock_in.rb	/^      def post_params$/;"	f	class:Servicetrade.Action.ClockIn
+post_params	lib/servicetrade/actions/clock_out.rb	/^      def post_params$/;"	f	class:Servicetrade.Action.ClockOut
+post_params	lib/servicetrade/actions/prepare_attachment.rb	/^      def post_params$/;"	f	class:Servicetrade.Action.PrepareAttachment
+post_params	lib/servicetrade/resources/asset_interface.rb	/^    def post_params$/;"	f	class:Servicetrade.AssetInterface
+post_params	lib/servicetrade/resources/deficiency_interface.rb	/^    def post_params$/;"	f	class:Servicetrade.DeficiencyInterface
+post_params	lib/servicetrade/resources/invoice_interface.rb	/^    def post_params$/;"	f	class:Servicetrade.InvoiceInterface
+post_params	lib/servicetrade/resources/job_interface.rb	/^    def post_params$/;"	f	class:Servicetrade.JobInterface
+post_params	lib/servicetrade/resources/job_item_interface.rb	/^    def post_params$/;"	f	class:Servicetrade.JobItemInterface
+post_params	lib/servicetrade/resources/location_interface.rb	/^    def post_params$/;"	f	class:Servicetrade.LocationInterface
+post_params	lib/servicetrade/resources/service_recurrence.rb	/^    def post_params$/;"	f	class:Servicetrade.ServiceRecurrence
+post_params	lib/servicetrade/resources/service_request.rb	/^    def post_params$/;"	f	class:Servicetrade.ServiceRequest
+post_params	lib/servicetrade/resources/tag_interface.rb	/^    def post_params$/;"	f	class:Servicetrade.TagInterface
+post_params	lib/servicetrade/resources/warehouse_interface.rb	/^    def post_params$/;"	f	class:Servicetrade.WarehouseInterface
+process_tag_data	lib/servicetrade/response_processor.rb	/^    def process_tag_data(tags)$/;"	f	class:Servicetrade.ResponseProcessor
+put	lib/servicetrade/api_interface.rb	/^    def put(params={})$/;"	f	class:Servicetrade.ApiInterface
+put_params	lib/servicetrade/resources/asset_interface.rb	/^    def put_params$/;"	f	class:Servicetrade.AssetInterface
+put_params	lib/servicetrade/resources/deficiency_interface.rb	/^    def put_params$/;"	f	class:Servicetrade.DeficiencyInterface
+put_params	lib/servicetrade/resources/invoice_interface.rb	/^    def put_params$/;"	f	class:Servicetrade.InvoiceInterface
+put_params	lib/servicetrade/resources/job_interface.rb	/^    def put_params$/;"	f	class:Servicetrade.JobInterface
+put_params	lib/servicetrade/resources/job_item_interface.rb	/^    def put_params$/;"	f	class:Servicetrade.JobItemInterface
+put_params	lib/servicetrade/resources/location_interface.rb	/^    def put_params$/;"	f	class:Servicetrade.LocationInterface
+put_params	lib/servicetrade/resources/service_recurrence.rb	/^    def put_params$/;"	f	class:Servicetrade.ServiceRecurrence
+put_params	lib/servicetrade/resources/service_request.rb	/^    def put_params$/;"	f	class:Servicetrade.ServiceRequest
+put_params	lib/servicetrade/resources/tag_interface.rb	/^    def put_params$/;"	f	class:Servicetrade.TagInterface
+put_params	lib/servicetrade/resources/warehouse_interface.rb	/^    def put_params$/;"	f	class:Servicetrade.WarehouseInterface
+raw_get	lib/servicetrade/api_interface.rb	/^    def raw_get(params={})$/;"	f	class:Servicetrade
+raw_post	lib/servicetrade/api_interface.rb	/^    def raw_post(params={})$/;"	f	class:Servicetrade
+raw_put	lib/servicetrade/api_interface.rb	/^    def raw_put(params={})$/;"	f	class:Servicetrade
+set_url	lib/servicetrade/api_interface.rb	/^    def set_url$/;"	f	class:Servicetrade
+upload_job_paperwork	lib/servicetrade/upload_attachment.rb	/^def self.upload_job_paperwork(job_id, file, authenticator, description=nil)$/;"	F	class:Servicetrade.UploadAttachment
+validate_post_params	lib/servicetrade/api_interface.rb	/^    def validate_post_params(params={})$/;"	f	class:Servicetrade
+validate_put_params	lib/servicetrade/api_interface.rb	/^    def validate_put_params(params={})$/;"	f	class:Servicetrade

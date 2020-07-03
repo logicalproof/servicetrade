@@ -29,6 +29,9 @@ module Servicetrade
   require File.dirname(__FILE__) +  '/servicetrade/resources/service_recurrence'
   require File.dirname(__FILE__) +  '/servicetrade/resources/brand_interface'
   require File.dirname(__FILE__) +  '/servicetrade/resources/attachment_interface'
+  require File.dirname(__FILE__) +  '/servicetrade/resources/job_item_interface'
+  require File.dirname(__FILE__) +  '/servicetrade/resources/warehouse_interface'
+
 
   require File.dirname(__FILE__) +  '/servicetrade/actions/clock_in'
   require File.dirname(__FILE__) +  '/servicetrade/actions/clock_out'
