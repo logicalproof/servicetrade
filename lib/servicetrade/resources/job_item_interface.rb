@@ -6,11 +6,11 @@ module Servicetrade
     end
 
     def base_url
-      return "/warehouse"
+      return "/jobitem"
     end
 
     def name
-      return "warehouses"
+      return "jobitems"
     end
 
     def post_params
