@@ -10,7 +10,7 @@ module Servicetrade
     end
 
     def name
-      return "jobitems"
+      return "jobItems"
     end
 
     def post_params
