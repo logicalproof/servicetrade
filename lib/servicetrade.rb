@@ -31,6 +31,7 @@ module Servicetrade
   require File.dirname(__FILE__) +  '/servicetrade/resources/attachment_interface'
   require File.dirname(__FILE__) +  '/servicetrade/resources/job_item_interface'
   require File.dirname(__FILE__) +  '/servicetrade/resources/warehouse_interface'
+  require File.dirname(__FILE__) +  '/servicetrade/resources/invoice_interface'
 
 
   require File.dirname(__FILE__) +  '/servicetrade/actions/clock_in'
